@@ -1,8 +1,8 @@
 <?php
 if($_POST)
 {
-    $to_Email   	= "strokesoffaith17@gmail.com"; //Replace with recipient email address
-    $subject        = 'Strokes Of Faith - New Contact Inquiry'; //Subject line for emails
+    $to_Email   	= "alexis.archer@strokesoffaith.art"; //Replace with recipient email address
+    $subject        = 'Strokes Of Faith - New Event Inquiry'; //Subject line for emails
 
 
     //check if its an ajax request, exit if not
