@@ -194,6 +194,11 @@
   <!-- end service section -->
 
  <!-- Portfolio Section -->
+<!-- Include Lightbox2 in your HTML (place in <head> or before </body>) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+<!-- Gallery Section -->
 <section class="portfolio_section py-5">
   <div class="container">
     <div class="custom_heading-container text-center mb-4">
@@ -202,64 +207,58 @@
     </div>
 
     <div class="row">
-      <!-- Gallery Items -->
-      <!-- Repeatable item -->
+      <!-- Gallery Item -->
       <div class="col-md-4 mb-4">
-        <div class="img-box position-relative">
-          <img src="images/p-1.jpg" alt="" class="img-fluid">
-          <a href="images/p-1.jpg" class="position-absolute top-0 end-0 p-2">
-            <img src="images/link.png" alt="View" style="width: 30px;">
-          </a>
-        </div>
-      </div>
-      <!-- Copy and update src for more -->
-      <div class="col-md-4 mb-4">
-        <div class="img-box position-relative">
-          <img src="images/p-2.jpg" alt="" class="img-fluid">
-          <a href="images/p-2.jpg" class="position-absolute top-0 end-0 p-2">
-            <img src="images/link.png" alt="View" style="width: 30px;">
+        <div class="img-box">
+          <a href="images/p-1.jpg" data-lightbox="gallery" data-title="Face Painting - Design 1">
+            <img src="images/p-1.jpg" alt="Face Painting" class="img-fluid">
           </a>
         </div>
       </div>
 
       <div class="col-md-4 mb-4">
-        <div class="img-box position-relative">
-          <img src="images/p-3.jpg" alt="" class="img-fluid">
-          <a href="images/p-3.jpg" class="position-absolute top-0 end-0 p-2">
-            <img src="images/link.png" alt="View" style="width: 30px;">
+        <div class="img-box">
+          <a href="images/p-2.jpg" data-lightbox="gallery" data-title="Face Painting - Design 2">
+            <img src="images/p-2.jpg" alt="Face Painting" class="img-fluid">
           </a>
         </div>
       </div>
 
       <div class="col-md-4 mb-4">
-        <div class="img-box position-relative">
-          <img src="images/p-4.jpg" alt="" class="img-fluid">
-          <a href="images/p-4.jpg" class="position-absolute top-0 end-0 p-2">
-            <img src="images/link.png" alt="View" style="width: 30px;">
+        <div class="img-box">
+          <a href="images/p-3.jpg" data-lightbox="gallery" data-title="Face Painting - Design 3">
+            <img src="images/p-3.jpg" alt="Face Painting" class="img-fluid">
           </a>
         </div>
       </div>
 
       <div class="col-md-4 mb-4">
-        <div class="img-box position-relative">
-          <img src="images/p-5.jpg" alt="" class="img-fluid">
-          <a href="images/p-5.jpg" class="position-absolute top-0 end-0 p-2">
-            <img src="images/link.png" alt="View" style="width: 30px;">
+        <div class="img-box">
+          <a href="images/p-4.jpg" data-lightbox="gallery" data-title="Paint Party Fun">
+            <img src="images/p-4.jpg" alt="Paint Party" class="img-fluid">
           </a>
         </div>
       </div>
 
       <div class="col-md-4 mb-4">
-        <div class="img-box position-relative">
-          <img src="images/p-6.jpg" alt="" class="img-fluid">
-          <a href="images/p-6.jpg" class="position-absolute top-0 end-0 p-2">
-            <img src="images/link.png" alt="View" style="width: 30px;">
+        <div class="img-box">
+          <a href="images/p-5.jpg" data-lightbox="gallery" data-title="Canvas To Go">
+            <img src="images/p-5.jpg" alt="Canvas To Go" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="img-box">
+          <a href="images/p-6.jpg" data-lightbox="gallery" data-title="Birthday Party Art">
+            <img src="images/p-6.jpg" alt="Birthday Party" class="img-fluid">
           </a>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Events Section -->
 <section class="news_section layout_padding">
