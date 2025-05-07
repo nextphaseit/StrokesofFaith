@@ -97,128 +97,111 @@
 
   <!-- contact section -->
 
-  <section class="breadcrumbs-section">
-    <div class="container p-1 p-sm-3">
-      <div class="row">
-        <div class="col-12">
-          <h2>Contact Us</h2>
-       
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="container">
+ <!-- Breadcrumbs Section -->
+<section class="breadcrumbs-section">
+  <div class="container p-1 p-sm-3">
     <div class="row">
       <div class="col-12">
-        <p>We are always here to help. If your have requirements/queries about our services; fill out
-          the contact form below and we'll do our best to reply within 24 hours or you may also you're welcome to call us.
+        <h2>Contact Us</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Intro Text -->
+<div class="container mb-4">
+  <div class="row">
+    <div class="col-12">
+      <p>
+        We are always here to help. If you have questions or requests about our services, please fill out
+        the contact form below and we’ll get back to you within 24 hours. You're also welcome to call us directly.
+      </p>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Form & Info Section -->
+<section>
+  <div class="container">
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <form action="contact_recaptcha_redirect.php" method="post">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" placeholder="Full name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="email" class="form-control" placeholder="Email Address" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="tel" class="form-control" placeholder="Contact Number">
+            </div>
+            <div class="form-group col-md-6">
+              <select class="form-control" required>
+                <option selected disabled>Type Of Service</option>
+                <option>Face Painting</option>
+                <option>Belly Painting</option>
+                <option>Paint Party</option>
+                <option>Canvas2Go</option>
+                <option>Birthday Party</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Subject">
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+          </div>
+
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-brush"></i> Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-6">
+        <h5>Call Us</h5>
+        <p>
+          <a href="tel:+12523276540">
+            <i class="fas fa-phone fa-lg"></i> +1 (252) 327-6540
+          </a>
         </p>
-        <hr>
+
+        <h5>Connect with Us</h5>
+        <p>
+          <a href="#" style="margin-right: 10px;"><i class="fa-brands fa-instagram fa-2x"></i></a>
+          <a href="https://www.facebook.com/lexjay819/" style="margin-right: 10px;"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://www.facebook.com/lexjay819/" style="margin-right: 10px;"><i class="fa-brands fa-facebook-messenger fa-2x"></i></a>
+          <a href="mailto:alexis.archer@strokesoffaith.art"><i class="fa-regular fa-envelope fa-2x"></i></a>
+        </p>
+
+        <h5>Address</h5>
+        <p>83 Hardwick St, Clayton, NC 27527</p>
       </div>
     </div>
   </div>
-  
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <form action="contact_recaptcha_redirect.php">
-<div class="form-row">
-  <div class="form-group col-md-6">
-    <input type="text" class="form-control" placeholder="Full name">
-</div>
+</section>
 
-    <div class="form-group col-md-6">
-    <input type="email" class="form-control" placeholder="Email Address">
-    </div>
-    </div>
-
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <input type="number" class="form-control" placeholder="Contact Number">
-  
-      </div>
-      <div class="form-group col-md-6">
-      <select class="form-control" name="" id="">
-        <option selected>Type Of Service</option>
-        <option>Face Painting</option>
-        <option>Belly Painting</option>
-        <option>Paint Party</option>
-        <option>Canvas2Go</option>
-        <option>Birthday Party</option>
-        
-
-      </select>
-    </div>
+<!-- Google Maps Section -->
+<section class="mt-4">
+  <div style="width: 100%;">
+    <iframe width="100%" height="300"
+      src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1609%20Barlow%20Road%20Tarboro%2C%20NC%2027886+(Strokes%20Of%20Faith)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+      frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
   </div>
+</section>
 
-  
-  <div class="form-row">
-    <div class="form-group col-md-12">
-      <input type="text" class="form-control" placeholder="Subject">
-  
-      
-    </div>
-  </div>
-  
-
-  <div class="form-row">
-    <div class="form-group col-md-12">
-      <textarea class="form-control" rows="5"></textarea>
-  </div>
-  </div>
-
-  <div class="form-row">
-<div class="form-group col-md-12" style="text-align: center;"> 
-    <button type="submit" class="btn btn-primary">Send Message</button>
-    <form action="contact_recaptcha_redirect.php" method="post" enctype="text/plain"></form>
-</div>
-
-
-  </div>
-</form>
-    </div>
-    <div class="col-6 address">
-      <h5>Call Us</h5>
-      <p>
-    <a href="tel:+12523276540" style="width: fit-content;">
-  <i class="fas fa-phone fa-2x"></i>
-</a>
-<br>
-      
-      </p>
-      <h5>Connect with us</h5>
-      <p>
-     
-      <a href="#"i class="fab fa-2x fa-instagram" style="width: fit-content;"></i></a> 
-      <a href="https://www.facebook.com/lexjay819/"i class="fab fa-2x fa-facebook" style="width: fit-content;"></i></a>
-      <a href="https://www.facebook.com/lexjay819/"i class="fab fa-2x fa-facebook-messenger"></i></a>
-      <a href="mailto:alexis.archer@strokesoffaith.art"i class="far fa-2x fa-envelope"></i></a>
-      <h5>Address</h5>
-      <p>83 Hardwick St, Clayton NC 27527
-      </p>
-
-      
-    </div>
-
-  </section>
-
-  <section>
-
-
-
-    <div style="width: 100%"><iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=en&amp;q=1609%20Barlow%20Road%20Tarboro%2C%20NC%2027886+(Strokes%20Of%20Faith)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">gps coordinates</a></iframe></div><br />
-
-
-
-
-
-
-
-
-
-
- </section>
   
 
 
