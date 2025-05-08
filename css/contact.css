@@ -5,6 +5,26 @@ All the style elements use form id selector(notice the #contactus). So, includin
 stylesheet does not affect the other elements at all!
 */
 
+#social icons
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.social-icons a {
+  color: #555;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Replace with your brand color */
+}
+
+
 #contactus fieldset
 {
    width:320px;
