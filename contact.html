@@ -145,32 +145,52 @@
   
 
 
-  <!-- end contact <!-- payment section -->
-<section class="payment_section layout_padding">
+  <!-- pay now section -->
+<section class="payment_section layout_padding" style="background-color: #f9f9f9;">
   <div class="container text-center">
-    <h2 class="mb-4">Pay Now</h2>
+    <div class="custom_heading-container mb-4">
+      <hr>
+      <h2>Pay Now</h2>
+    </div>
 
-    <div class="d-flex justify-content-center flex-wrap gap-3">
-      <!-- Zelle (text-based since Zelle has no public pay link) -->
-      <div>
-        <a href="mailto:your@email.com?subject=Zelle%20Payment" class="btn btn-outline-primary" target="_blank">
-          Pay with Zelle
-        </a>
-        <p class="mt-2 small text-muted">Send via Zelle to: your@email.com</p>
+    <div class="row justify-content-center">
+      <!-- Zelle -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="payment-box shadow p-4 bg-white rounded">
+          <img src="images/zelle-logo.png" alt="Zelle" class="mb-3" style="max-height: 40px;">
+          <p>Send payment to:</p>
+          <p><strong>your@email.com</strong></p>
+          <a href="mailto:your@email.com?subject=Zelle%20Payment"
+             class="btn btn-outline-primary mt-2" target="_blank">
+            Pay with Zelle
+          </a>
+        </div>
       </div>
 
       <!-- PayPal -->
-      <div>
-        <a href="https://www.paypal.me/yourusername" class="btn btn-outline-info" target="_blank">
-          Pay with PayPal
-        </a>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="payment-box shadow p-4 bg-white rounded">
+          <img src="images/paypal-logo.png" alt="PayPal" class="mb-3" style="max-height: 40px;">
+          <p>PayPal Me:</p>
+          <p><strong>paypal.me/yourusername</strong></p>
+          <a href="https://www.paypal.me/yourusername"
+             class="btn btn-outline-info mt-2" target="_blank">
+            Pay with PayPal
+          </a>
+        </div>
       </div>
 
       <!-- Cash App -->
-      <div>
-        <a href="https://cash.app/$yourcashtag" class="btn btn-outline-success" target="_blank">
-          Pay with Cash App
-        </a>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="payment-box shadow p-4 bg-white rounded">
+          <img src="images/cashapp-logo.png" alt="Cash App" class="mb-3" style="max-height: 40px;">
+          <p>Cash Tag:</p>
+          <p><strong>$yourcashtag</strong></p>
+          <a href="https://cash.app/$yourcashtag"
+             class="btn btn-outline-success mt-2" target="_blank">
+            Pay with Cash App
+          </a>
+        </div>
       </div>
     </div>
   </div>
