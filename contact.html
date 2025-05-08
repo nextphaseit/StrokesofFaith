@@ -3,6 +3,10 @@
 
 <head>
 
+  <script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAOaSHnMy3WP5Yr65PFY4KpCyo7DdC8xyeBa_EGbXrDooiks4Whojl1ZvgKvD7Rc4RgiYMvbkOkw-IuaU&components=hosted-buttons&enable-funding=venmo&currency=USD">
+</script>
+
   <!-- Social Icons -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -173,6 +177,14 @@
 
 
   <!-- pay now section -->
+
+<div id="paypal-container-YWL6537WGCDGL"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "YWL6537WGCDGL",
+  }).render("#paypal-container-YWL6537WGCDGL")
+</script>
+  
 <section class="payment_section layout_padding" style="background-color: #f9f9f9;">
   <div class="container text-center">
     <div class="custom_heading-container mb-4">
@@ -185,8 +197,7 @@
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="payment-box shadow p-4 bg-white rounded">
           <img src="images/zelle-logo.png" alt="Zelle" class="mb-3" style="max-height: 40px;">
-          <p>Send payment to:</p>
-          <p><strong>your@email.com</strong></p>
+      
           <a href="mailto:your@email.com?subject=Zelle%20Payment"
              class="btn btn-outline-primary mt-2" target="_blank">
             Pay with Zelle
@@ -198,9 +209,8 @@
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="payment-box shadow p-4 bg-white rounded">
           <img src="images/paypal-logo.png" alt="PayPal" class="mb-3" style="max-height: 40px;">
-          <p>PayPal Me:</p>
-          <p><strong>paypal.me/yourusername</strong></p>
-          <a href="https://www.paypal.me/yourusername"
+          
+          <a href="https://www.paypal.me/@trufix"
              class="btn btn-outline-info mt-2" target="_blank">
             Pay with PayPal
           </a>
