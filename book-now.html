@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Now - Strokes of Faith</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .confirmation-message {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Book Your Event</h2>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" class="form-control" id="fullName" required />
+      </div>
+      <div class="form-group">
+        <label for="emailAddress">Email Address</label>
+        <input type="email" class="form-control" id="emailAddress" required />
+      </div>
+      <div class="form-group">
+        <label for="eventType">Service</label>
+        <select class="form-control" id="eventType" required>
+          <option>Face Painting</option>
+          <option>Belly Painting</option>
+          <option>Canvas To Go</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="eventDetails">Event Details</label>
+        <textarea class="form-control" id="eventDetails" rows="3" placeholder="Date, Time, Location"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Submit Booking</button>
+    </form>
+
+    <div class="confirmation-message alert alert-success text-center mt-4" id="confirmationMessage">
+      Thank you! A confirmation message will be sent via SMS. Please proceed with payment below.
+    </div>
+
+    <hr>
+
+    <h4 class="text-center">Payment Options</h4>
+    <div class="text-center">
+      <form action="https://www.paypal.com/donate" method="post" target="_blank" class="d-block mb-2">
+        <input type="hidden" name="business" value="placeholder@example.com" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <button type="submit" class="btn btn-outline-primary">Pay with PayPal</button>
+      </form>
+      <a href="https://cash.app/$YourCashtag" target="_blank" class="btn btn-outline-success d-block mb-2">Pay with Cash App</a>
+      <div class="alert alert-info mt-2">
+        <strong>Zelle:</strong> Please send payment to <b>(555) 123-4567</b> using your banking app.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('confirmationMessage').style.display = 'block';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
